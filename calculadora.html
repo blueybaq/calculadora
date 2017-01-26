@@ -1,0 +1,74 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script src="../jquery-3.1.1.min.js"></script>
+        <script src="calculadora.js"></script>
+        <link rel="stylesheet" href="calculadora.css"/>
+        
+        <!--
+        /*
+        //ATTR
+        //attr= sacarte un atributo, por ejemplo, el value, el id, href...
+        //attr("nombre_atributo")
+        
+        //VAL
+        //$('input:text').val('cadena de texto'); añade texto
+        //$('input:text').val(); extrae el valor que hay en el input
+        
+        //TEXT
+        //text no funciona con input, val si
+        //$('input').text('cadena de texto');
+        
+        
+            estructura jquery
+            $(function(){
+                $('nombre_clase').click(nombre_funcion);
+                function nombre_funcion(){
+                    alert('hola');
+                }
+    
+                $('nombre_clase').click(function(){
+                    alert('hola');
+                });
+            })
+        -->
+    </head>
+    <body>
+       <div id="contenedor">
+           <div class="pantalla"></div>
+           <input type="hidden" value="" class="input_valor"/>
+           
+           <div class="bloque">
+               <div class="boton"><a href="1" class="valor">1</a></div>
+               <div class="boton"><a href="2" class="valor">2</a></div>
+               <div class="boton"><a href="3" class="valor">3</a></div>
+               <div class="boton"><a href="-" class="op">+</a></div>
+           </div>
+           
+           <div class="bloque">
+               <div class="boton"><a href="4" class="valor">4</a></div>
+               <div class="boton"><a href="5" class="valor">5</a></div>
+               <div class="boton"><a href="6" class="valor">6</a></div>
+               <div class="boton"><a href="-" class="op">-</a></div>
+           </div>
+           
+           <div class="bloque">
+               <div class="boton"><a href="7" class="valor">7</a></div>
+               <div class="boton"><a href="8" class="valor">8</a></div>
+               <div class="boton"><a href="9" class="valor">9</a></div>
+               <div class="boton"><a href="/" class="op">/</a></div>
+           </div>
+           
+           <div class="bloque">
+               <div class="boton_grande"><a href="0" class="valor">0</a></div>
+               <div class="boton"><a href="*" class="op">*</a></div>
+           </div>
+           
+           <div class="bloque">
+               <div class="boton_grande"><a href="=" class="op">=</a></div>
+               <div class="boton" id="borrar"><a href="C" class="op">C</a></div>
+           </div>
+       </div>  
+    </body>
+</html>
